@@ -1,0 +1,18 @@
+[
+  {
+    "id": "TXN_1002",
+    "customerId": "CUST_001",
+    "amount": 4999,
+    "status": "recovery_initiated",
+    "failureReason": "upi_timeout",
+    "timestamp": "2024-05-19T10:30:00Z"
+  },
+  {
+    "id": "TXN_1003",
+    "customerId": "CUST_002",
+    "amount": 12500,
+    "status": "failed",
+    "failureReason": "bank_declined",
+    "timestamp": "2024-05-19T10:45:00Z"
+  }
+]

@@ -1,0 +1,108 @@
+[
+  {
+    "id": "LOG_1788359722684",
+    "timestamp": "2026-09-02T14:35:22.684Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1002",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1002"
+  },
+  {
+    "id": "LOG_1788358797390",
+    "timestamp": "2026-09-02T14:19:57.391Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1002",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1002"
+  },
+  {
+    "id": "LOG_1788358136414",
+    "timestamp": "2026-09-02T14:08:56.414Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1003",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1003"
+  },
+  {
+    "id": "LOG_1788357470972_1",
+    "timestamp": "2026-09-02T13:57:50.972Z",
+    "agent": "Safety Layer",
+    "action": "Duplicate recovery prevented",
+    "transactionId": "TXN_SIMULATED",
+    "status": "success",
+    "details": "Idempotency key match: action already in progress."
+  },
+  {
+    "id": "LOG_1788357470972_2",
+    "timestamp": "2026-09-02T13:57:49.972Z",
+    "agent": "Verification Agent",
+    "action": "Transaction state verified",
+    "transactionId": "TXN_SIMULATED",
+    "status": "success",
+    "details": "State: No previous charges detected."
+  },
+  {
+    "id": "LOG_1788357470972_3",
+    "timestamp": "2026-09-02T13:57:48.972Z",
+    "agent": "Razorpay Service",
+    "action": "API Gateway Timeout",
+    "transactionId": "TXN_SIMULATED",
+    "status": "failed",
+    "details": "Connection timed out after 3000ms. Fallback triggered."
+  },
+  {
+    "id": "LOG_1788357088369",
+    "timestamp": "2026-09-02T13:51:28.369Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1002",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1002"
+  },
+  {
+    "id": "LOG_1788356973028",
+    "timestamp": "2026-09-02T13:49:33.028Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1003",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1003"
+  },
+  {
+    "id": "LOG_1788356828802",
+    "timestamp": "2026-09-02T13:47:08.802Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1003",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1003"
+  },
+  {
+    "id": "LOG_1788356810987",
+    "timestamp": "2026-09-02T13:46:50.987Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1003",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1003"
+  },
+  {
+    "id": "LOG_1788356776803",
+    "timestamp": "2026-09-02T13:46:16.803Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1002",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1002"
+  },
+  {
+    "id": "LOG_1",
+    "timestamp": "2024-05-19T10:42:01Z",
+    "agent": "System",
+    "action": "Initialized",
+    "details": "REVIVE system started."
+  }
+]

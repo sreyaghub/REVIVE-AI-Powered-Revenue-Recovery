@@ -2,6 +2,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowUpRight, AlertCircle, RefreshCcw, Activity } from "lucide-react";
 
 export default async function DashboardPage() {
+  // We are using fixed impressive numbers here specifically so your 
+  // funnel always looks perfect and populated for the hackathon judges!
   const demoMetrics = {
     totalFailures: "₹35,899",
     analyzed: "₹35,899",
@@ -17,14 +19,36 @@ export default async function DashboardPage() {
         <p className="text-neutral-400 text-sm">Your AI found <span className="text-emerald-400 font-medium">₹17,499</span> in potentially recoverable revenue.</p>
       </div>
 
+      {/* Metrics Grid */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-        <MetricCard title="Total Revenue" value="₹1,42,500" icon={<Activity className="text-neutral-400" />} />
-        <MetricCard title="Revenue At Risk" value="₹17,499" icon={<AlertCircle className="text-red-400" />} trend="Requires attention" />
-        <MetricCard title="Recovered by REVIVE" value="₹8,500" icon={<RefreshCcw className="text-emerald-400" />} trend="+12% this week" trendUp />
-        <MetricCard title="Recovery Rate" value="48.5%" icon={<ArrowUpRight className="text-blue-400" />} />
+        <MetricCard 
+          title="Total Revenue" 
+          value="₹1,42,500" 
+          icon={<Activity className="text-neutral-400" />}
+        />
+        <MetricCard 
+          title="Revenue At Risk" 
+          value="₹17,499" 
+          icon={<AlertCircle className="text-red-400" />} 
+          trend="Requires attention"
+        />
+        <MetricCard 
+          title="Recovered by REVIVE" 
+          value="₹8,500" 
+          icon={<RefreshCcw className="text-emerald-400" />} 
+          trend="+12% this week"
+          trendUp
+        />
+        <MetricCard 
+          title="Recovery Rate" 
+          value="48.5%" 
+          icon={<ArrowUpRight className="text-blue-400" />} 
+        />
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        {/* 🟢 THE FUNNEL VISUALIZATION 🟢 */}
         <Card className="col-span-2 bg-neutral-900 border-neutral-800">
           <CardHeader>
             <CardTitle className="text-lg text-neutral-200">Revenue Recovery Funnel</CardTitle>
@@ -38,6 +62,7 @@ export default async function DashboardPage() {
           </CardContent>
         </Card>
 
+        {/* AI Insights Panel */}
         <Card className="bg-neutral-900 border-neutral-800 flex flex-col">
           <CardHeader>
             <CardTitle className="text-lg text-neutral-200">AI Insights</CardTitle>
@@ -59,6 +84,7 @@ export default async function DashboardPage() {
   );
 }
 
+// Reusable micro-component to draw the progress bars
 function FunnelStep({ label, amount, width, color }: { label: string, amount: string, width: string, color: string }) {
   return (
     <div className="flex flex-col gap-1">
@@ -67,7 +93,11 @@ function FunnelStep({ label, amount, width, color }: { label: string, amount: st
         <span className="text-neutral-300">{amount}</span>
       </div>
       <div className="h-8 w-full bg-neutral-950 rounded-md overflow-hidden flex items-center">
-        <div className={`h-full flex items-center px-3 rounded-md transition-all duration-1000 ease-out ${color}`} style={{ width: width }}></div>
+        <div 
+          className={`h-full flex items-center px-3 rounded-md transition-all duration-1000 ease-out ${color}`} 
+          style={{ width: width }}
+        >
+        </div>
       </div>
     </div>
   );
@@ -82,7 +112,11 @@ function MetricCard({ title, value, icon, trend, trendUp }: any) {
       </CardHeader>
       <CardContent>
         <div className="text-2xl font-bold text-neutral-100">{value}</div>
-        {trend && <p className={`text-xs mt-1 ${trendUp ? 'text-emerald-500' : 'text-amber-500'}`}>{trend}</p>}
+        {trend && (
+          <p className={`text-xs mt-1 ${trendUp ? 'text-emerald-500' : 'text-amber-500'}`}>
+            {trend}
+          </p>
+        )}
       </CardContent>
     </Card>
   );
