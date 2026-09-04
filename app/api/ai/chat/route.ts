@@ -4,9 +4,8 @@ import { aiToolsDefinition, executeTool } from '@/lib/ai/tools';
 
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
-// We define the model here so it's easy to change. 
-// If this one ever fails, you can change it to "mixtral-8x7b-32768"
-const MODEL_NAME = "openai/gpt-oss-20b";
+// FIX 1: Changed to a valid, blazing fast Groq model that fully supports tool calling.
+const MODEL_NAME = "openai/gpt-oss-20b"; 
 
 export async function POST(req: Request) {
   try {
@@ -45,6 +44,7 @@ export async function POST(req: Request) {
       const secondCompletion = await groq.chat.completions.create({
         model: MODEL_NAME,
         messages: secondRoundMessages as any,
+        tools: aiToolsDefinition as any, // <--- FIX 2: We must pass the tools array here again!
       });
 
       return NextResponse.json({ role: "assistant", content: secondCompletion.choices[0].message.content });

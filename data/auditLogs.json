@@ -1,5 +1,41 @@
 [
   {
+    "id": "LOG_1788537631799",
+    "timestamp": "2026-09-04T16:00:31.800Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1004",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1004"
+  },
+  {
+    "id": "LOG_1788536638241",
+    "timestamp": "2026-09-04T15:43:58.242Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1005",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1005"
+  },
+  {
+    "id": "LOG_1788529907303",
+    "timestamp": "2026-09-04T13:51:47.304Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1002",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1002"
+  },
+  {
+    "id": "LOG_1788525002821",
+    "timestamp": "2026-09-04T12:30:02.821Z",
+    "agent": "Recovery Agent",
+    "action": "Simulated Payment Link",
+    "transactionId": "TXN_1003",
+    "status": "success",
+    "details": "Generated link: https://rzp.io/i/simulated_TXN_1003"
+  },
+  {
     "id": "LOG_1788359722684",
     "timestamp": "2026-09-02T14:35:22.684Z",
     "agent": "Recovery Agent",

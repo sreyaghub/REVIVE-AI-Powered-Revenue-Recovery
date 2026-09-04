@@ -14,5 +14,29 @@
     "status": "failed",
     "failureReason": "bank_declined",
     "timestamp": "2024-05-19T10:45:00Z"
+  },
+  {
+    "id": "TXN_1004",
+    "customerId": "CUST_089",
+    "amount": 1499,
+    "status": "recovery_initiated",
+    "failureReason": "insufficient_funds",
+    "timestamp": "2024-05-19T11:15:00Z"
+  },
+  {
+    "id": "TXN_1005",
+    "customerId": "CUST_102",
+    "amount": 8999,
+    "status": "recovery_initiated",
+    "failureReason": "upi_timeout",
+    "timestamp": "2024-05-19T11:42:00Z"
+  },
+  {
+    "id": "TXN_1006",
+    "customerId": "CUST_044",
+    "amount": 350,
+    "status": "failed",
+    "failureReason": "risk_blocked",
+    "timestamp": "2024-05-19T12:05:00Z"
   }
 ]
